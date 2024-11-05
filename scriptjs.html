@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cuenta, Persona, Passwords, Series y Videojuegos</title>
+    <link rel="stylesheet" href="styles/js.css">
+</head>
+<body>
+    <h1>Gestión de Cuentas, Personas, Contraseñas, Series y Videojuegos</h1>
+
+    <!-- Sección para la Cuenta -->
+    <section id="cuentaSection">
+        <h2>Cuenta Bancaria</h2>
+        <form id="formCuenta">
+            <fieldset>
+                <legend>Crear Cuenta</legend>
+                <label for="titular">Titular:</label>
+                <input type="text" id="titular" name="titular" required>
+
+                <label for="cantidad">Cantidad inicial:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+
+                <button type="submit">Crear Cuenta</button>
+            </fieldset>
+        </form>
+        <div id="cuentaInfo"></div>
+
+        <fieldset>
+            <legend>Operaciones de Cuenta</legend>
+            <label for="cantidadIngresar">Cantidad a ingresar:</label>
+            <input type="number" id="cantidadIngresar" name="cantidadIngresar">
+
+            <button id="ingresarDinero">Ingresar Dinero</button>
+
+            <label for="cantidadRetirar">Cantidad a retirar:</label>
+            <input type="number" id="cantidadRetirar" name="cantidadRetirar">
+
+            <button id="retirarDinero">Retirar Dinero</button>
+        </fieldset>
+    </section>
+
+    <hr>
+
+    <!-- Sección para la Persona -->
+    <section id="personaSection">
+        <h2>Datos de Persona</h2>
+        <form id="formPersona">
+            <fieldset>
+                <legend>Crear Persona</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="sexo">Sexo (H/M):</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                </select>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" step="any" id="peso" name="peso" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" step="any" id="altura" name="altura" required>
+
+                <button type="submit">Crear Persona</button>
+            </fieldset>
+        </form>
+        <div id="personaInfo"></div>
+    </section>
+
+    <hr>
+
+    <!-- Sección para la Generación de Passwords -->
+    <section id="passwordSection">
+        <h2>Generador de Contraseñas</h2>
+        <form id="formPassword">
+            <fieldset>
+                <legend>Crear Passwords</legend>
+                <label for="tamañoArray">Tamaño del array de Passwords:</label>
+                <input type="number" id="tamañoArray" name="tamañoArray" required>
+
+                <label for="longitud">Longitud de las contraseñas:</label>
+                <input type="number" id="longitud" name="longitud" required>
+
+                <button type="submit">Generar Contraseñas</button>
+            </fieldset>
+        </form>
+        <div id="passwordResults"></div>
+    </section>
+
+    <hr>
+
+    <!-- Sección para la Gestión de Series -->
+    <section id="serieSection">
+        <h2>Gestión de Series</h2>
+        <form id="formSerie">
+            <fieldset>
+                <legend>Crear Serie</legend>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="numeroTemporadas">Número de Temporadas:</label>
+                <input type="number" id="numeroTemporadas" name="numeroTemporadas" value="3" required>
+
+                <label for="genero">Género:</label>
+                <input type="text" id="genero" name="genero">
+
+                <label for="creador">Creador:</label>
+                <input type="text" id="creador" name="creador" required>
+
+                <button type="submit">Crear Serie</button>
+            </fieldset>
+        </form>
+        <div id="serieInfo"></div>
+    </section>
+
+    <hr>
+
+    <!-- Sección para la Gestión de Videojuegos -->
+    <section id="videojuegoSection">
+        <h2>Gestión de Videojuegos</h2>
+        <form id="formVideojuego">
+            <fieldset>
+                <legend>Crear Videojuego</legend>
+    
+                <label for="tituloVideojuego">Título:</label>
+                <input type="text" id="tituloVideojuego" name="tituloVideojuego" placeholder="Ej. The Legend of Zelda" required>
+    
+                <label for="horasEstimadas">Horas Estimadas:</label>
+                <input type="number" id="horasEstimadas" name="horasEstimadas" value="10" min="1" required>
+    
+                <label for="generoVideojuego">Género:</label>
+                <input type="text" id="generoVideojuego" name="generoVideojuego" placeholder="Ej. Aventura, Acción">
+    
+                <label for="compania">Compañía:</label>
+                <input type="text" id="compania" name="compania" placeholder="Ej. Nintendo" required>
+    
+                <label for="descripcionVideojuego">Descripción (opcional):</label>
+                <textarea id="descripcionVideojuego" name="descripcionVideojuego" rows="3" placeholder="Breve descripción del videojuego"></textarea>
+    
+                <label for="entregadoVideojuego">
+                    <input type="checkbox" id="entregadoVideojuego" name="entregadoVideojuego">
+                    ¿Entregado?
+                </label>
+    
+                <button type="submit">Crear Videojuego</button>
+            </fieldset>
+        </form>
+    
+        <div id="videojuegoInfo" aria-live="polite" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+            <!-- Aquí se mostrará la información del videojuego creado -->
+        </div>
+    </section>
+    
+
+    <!-- Incluir los scripts específicos para cada sección -->
+    <script src="js/punto1.js"></script>
+    <script src="js/punto2.js"></script>
+    <script src="js/punto3.js"></script>
+    <script src="js/punto4.js"></script>
+    <script src="js/punto5.js"></script>
+</body>
+</html>

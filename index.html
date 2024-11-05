@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos (POO)</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Programación Orientada a Objetos (POO)</h1>
+        <p>Es un paradigma de programación que organiza el código en "objetos", que son instancias de clases. Cada objeto tiene <strong>atributos</strong> (propiedades) y <strong>métodos</strong> (funciones), y se centra en representar elementos del mundo real.</p>
+
+        <h2>Trabajando con JSON en JavaScript</h2>
+
+        <h3>Convertir un objeto en JSON:</h3>
+        <code>
+            let objeto = { nombre: "James", edad: 30 }; <br>
+            let jsonString = JSON.stringify(objeto);  // Convierte el objeto a JSON (string)
+        </code>
+
+        <h3 title="YIII">Convertir JSON a un objeto:</h3>
+        <code>
+            let jsonString = '{"nombre": "James", "edad": 30}'; <br>
+            let objeto = JSON.parse(jsonString);  // Convierte el JSON a un objeto
+        </code>
+
+        <h2>Pilares de la Programación Orientada a Objetos</h2>
+        <ul>
+            <li><strong>Encapsulamiento:</strong> Agrupa los datos y las funciones que operan sobre esos datos en una clase.</li>
+            <li><strong>Herencia:</strong> Permite crear nuevas clases basadas en clases existentes.</li>
+            <li><strong>Polimorfismo:</strong> Habilidad de los objetos de una clase derivada de comportarse de manera diferente según su contexto.</li>
+            <li><strong>Abstracción:</strong> Simplifica la complejidad ocultando detalles innecesarios.</li>
+        </ul>
+
+        <h2>Polimorfismo</h2>
+        <p>El polimorfismo permite que un mismo método se comporte de distintas maneras dependiendo del objeto que lo invoque.</p>
+        <p><strong>Tipos de polimorfismo:</strong></p>
+        <ul>
+            <li><strong>Polimorfismo de Sobrecarga:</strong> Permite tener múltiples métodos con el mismo nombre pero diferentes parámetros.</li>
+            <li><strong>Polimorfismo de Sobreescritura:</strong> Permite que una clase derivada modifique el comportamiento de un método de la clase base.</li>
+        </ul>
+
+        <h2>Relaciones entre clases en UML</h2>
+        <ul>
+            <li><strong>Asociación:</strong> Es una relación simple entre dos clases.</li>
+            <li><strong>Agregación:</strong> Una relación "tiene una", donde una clase contiene a otra.</li>
+            <li><strong>Composición:</strong> Una forma más fuerte de agregación. Si la clase contenedora se destruye, las contenidas también.</li>
+            <li><strong>Herencia:</strong> Una clase hereda de otra.</li>
+            <li><strong>Relación simple:</strong> Relación básica entre dos clases.</li>
+        </ul>
+
+        <h3>Ejemplo de Pseudocódigo</h3>
+        <code>
+        
+        <h2>Definiciones</h2>
+        <ul>
+            <li><strong>Clase:</strong> Es el plano o molde a partir del cual se crean objetos. Contiene atributos y métodos.</li>
+            <li><strong>Instancia:</strong> Es un objeto creado a partir de una clase.</li>
+            <li><strong>Atributos:</strong> Son las características o propiedades de una clase u objeto.</li>
+            <li><strong>Métodos:</strong> Son las funciones o comportamientos que tiene un objeto.</li>
+            <li><strong>Herencia:</strong> Es la capacidad de una clase para heredar atributos y métodos de otra clase.</li>
+            <li><strong>Visibilidad:</strong> Controla el acceso a los atributos y métodos de una clase (público, privado, protegido).</li>
+            <li><strong>Abstracción:</strong> Simplifica la complejidad ocultando los detalles internos.</li>
+            <li><strong>Objeto:</strong> Es una instancia de una clase, un ejemplar que tiene atributos y métodos propios.</li>
+            <li><strong>Encapsulamiento:</strong> Consiste en ocultar el estado interno del objeto y proteger su información.</li>
+            <li><strong>JSON (JavaScript Object Notation):</strong> Es un formato de intercambio de datos que utiliza pares clave-valor.</li>
+        </ul>
+
+        <!-- Sección para las imágenes -->
+        <h2>Imágenes con puntos</h2>
+        <div class="imagenes">
+            <div class="imagen-item">
+                <h3>Punto 1</h3>
+                <img src="img/punto 1.jpg" alt="Imagen 1">
+            </div>
+            <div class="imagen-item">
+                <h3>Punto 2</h3>
+                <img src="img/punto 2.jpg" alt="Imagen 2">
+            </div>
+            <div class="imagen-item">
+                <h3>Punto 3</h3>
+                <img src="img/punto 3.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen-item">
+                <h3>Punto 4</h3>
+                <img src="img/punto 4.jpg" alt="Imagen 4">
+            </div>
+            <div class="imagen-item">
+                <h3>Punto 5</h3>
+                <img src="img/punto 5.jpg" alt="Imagen 4">
+            </div>
+        </div>
+        <a href="scriptjs.html"><input type="button" value="practica"></a>
+        
+    </div>
+
+</body>
+</html>
